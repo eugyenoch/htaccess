@@ -1,0 +1,9 @@
+#By default Apache follows symlinks, we can turn off this feature with FollowSymLinks with Options directive. 
+
+# Enable symbolic links
+Options -FollowSymLinks
+
+#Conversely to enable FollowSymlinks, use the options below
+
+# Enable symbolic links
+Options +FollowSymLinks
