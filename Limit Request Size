@@ -1,0 +1,16 @@
+#By default Apache has no limit on the total size of the HTTP request
+#when you allow large requests on a web server its possible that you could be a victim of Direct Denial of service attacks. 
+#We can Limit the requests size of an Apache directive “LimitRequestBody” with the directory tag.
+#You can set the value in bytes from 0 (unlimited) to 512000 (500KB) that are allowed in a request body.
+#Use the below option to limit request for a directory in your web server
+#replace /var/www/myweb1/user_uploads with your preferred directory path
+
+#LimitRequestSize for a directory
+<Directory "/var/www/myweb1/user_uploads">
+   LimitRequestBody 512000
+</Directory>
+
+#Second option would be to limit request size generally
+
+#LimitRequestSize 
+LimitRequestBody 512000
