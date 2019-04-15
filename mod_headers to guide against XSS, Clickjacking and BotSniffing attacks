@@ -1,11 +1,21 @@
+#In order to improve the security of your site against some types of XSS (cross-site scripting) attacks, it is recommended that you add the following header to your site:
+
+#Security Headers - X-XSS-Protection
 <IfModule mod_headers.c>
 Header set X-XSS-Protection "1; mode=block"
 </IfModule>
 
+#In order to improve the security of your site against ClickJacking, it is recommended that you add the following header to your site
+
+Security Headers - X-Frame-Options
 <IfModule mod_headers.c>
 Header always append X-Frame-Options SAMEORIGIN
 </IfModule>
 
+
+#In order to improve the security of your site (and your users) against some types of drive-by-downloads
+
+#Security Headers - X-Content-Type: nosniff
 <IfModule mod_headers.c>
 Header set X-Content-Type-Options nosniff
 </IfModule>
