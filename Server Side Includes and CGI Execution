@@ -1,0 +1,15 @@
+#We can turn off server side includes (mod_include) and CGI execution for any particular directory if not needed and to do so 
+#we need to modify main configuration file.
+#Replace the /var/www/html/web1 with your own choices if need be
+
+#Turn off server side includes and CGI execution
+<Directory "/var/www/html/web1">
+Options -Includes -ExecCGI
+</Directory>
+
+#To turn off server side includes (mod_include) and CGI execution generally
+#add the options below to your .htaccess file
+
+#Turn off server side includes and CGI execution
+Options -Includes
+Options -ExecCGI
