@@ -6,3 +6,6 @@ What is .htaccess?
 
 Support for .htaccess?
 The .htaccess is supported by several webservers, including the popular Apache software used by most commercial web hosting providers.
+
+About that [L] you see often in your .htaccess rules?
+The [L] should not be used at the end of every line, just the end of the last RewriteRule that you are doing.
