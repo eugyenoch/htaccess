@@ -5,3 +5,7 @@
 #To turn off ServerSignature,
 #Place the below code in your .htaccess file
 ServerSignature Off
+
+#The ServerTokens Prod tells Apache to return only Apache as product in the server response header on the every page request
+#It suppress the OS, major and minor version info
+ServerTokens Prod
