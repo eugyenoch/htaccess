@@ -1,0 +1,8 @@
+#After going through a recent PHP upgrade and you still encounter errors
+#Could be as a result of your .htaccess not updating
+#Use the below option to update your .htaccess with your newly updated PHP version
+
+# Set the “ea-php70” package as the default “PHP” programming language.
+<IfModule mime_module>
+AddType application/x-httpd-ea-php70 .php .php7 .phtml
+</IfModule>
