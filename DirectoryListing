@@ -1,0 +1,12 @@
+#By default Apache list all the content of Document root directory in the absence of index file. 
+
+#TurnOn Directory Listing, not recommended
+Options +Indexes
+
+#TurnOff Directory Listing, recommended
+Options -Indexes
+
+#You may also use this to make an entry in httpd.conf or apache2.conf file.
+<Directory /var/www/html>
+    Options -Indexes
+</Directory>
