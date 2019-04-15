@@ -1,0 +1,5 @@
+In order to improve the security of your site (and your users), you should enable the HttpOnly flag on all your cookies. It helps prevent XSS (cross-site scripting attacks) from gaining access to the session cookies via javascript. 
+Add the below line of code to achieve this
+
+#Cookies: HttpOnly
+Set-Cookie: COOKIE=VAL; path=/; domain=.domain.com; secure; HttpOnly
