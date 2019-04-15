@@ -1,0 +1,7 @@
+#By default almost all Apache installation shows sensitive server information with Apache version number, server operating system details, installed Apache modules, PHP-version and so on. 
+#Attackers can use this information when performing attacks.
+#It is very important to turn off Server Signsture if your webhost has left this on
+
+#To turn off ServerSignature,
+#Place the below code in your .htaccess file
+ServerSignature Off
