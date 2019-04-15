@@ -12,4 +12,4 @@ The [L] should not be used at the end of every line, just the end of the last Re
 
 DO REMEMBER: To enable rewrite rules inside “.htaccess” file “AllowOverride All” should be present in the main configuration globally.
 
-Mentions have been made with &heart; of files from external sources
+Mentions have been made with LOVE of files from external sources...
