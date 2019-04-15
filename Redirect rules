@@ -1,6 +1,6 @@
-The below rules are used to create redirect rules (usually called 301's by SEO and IT technical experts)
+#The below rules are used to create redirect rules (usually called 301's by SEO and IT technical experts)
 
-// redirect example.com to www.example.com
+#redirect example.com to www.example.com
 
 RewriteEngine On
 RewriteCond &#37;{HTTP_HOST} ^example.com$ [NC]
@@ -8,14 +8,14 @@ RewriteRule ^(.*)$ http://www.example.com/$1 [R=301,L]
 
 
 
-// redirect www.example.php?id=5 to www.example.php/blog/5
+#redirect www.example.php?id=5 to www.example.php/blog/5
 
 RewriteCond %{QUERY_STRING} id=([0-9]+)
 RewriteRule ^post\\.php$ http://www.example.com/blog/$1? [R=301,L]
 
 
 
-// index.php goes to / 
+#index.php goes to / 
 
 RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteRule ^(.*)index.php$ http://www.example.com/$1 [R=301,L]
