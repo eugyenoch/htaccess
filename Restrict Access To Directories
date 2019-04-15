@@ -1,0 +1,7 @@
+#We can restrict access to directories with “Allow” and “Deny” options in httpd.conf file.
+
+<Directory />
+   Options None
+   Order deny,allow
+   Deny from all
+</Directory>
