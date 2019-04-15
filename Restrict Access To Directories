@@ -1,4 +1,8 @@
 #We can restrict access to directories with “Allow” and “Deny” options in httpd.conf file.
+#Explanations
+#Options None – This option will not allow users to enable any optional features.
+#Order deny, allow – This is the order in which the “Deny” and “Allow” directives will be processed. Here it will “deny” first and “allow” next.
+#Deny from all – This will deny request from everybody to the root directory, nobody will be able to access root directory.
 
 <Directory />
    Options None
