@@ -1,0 +1,4 @@
+#The directoryindex command allows you to specify a default page to display when a directory is accessed.
+#The below line tells your web server to serve default files in the following order index.html >> index.cgi >> index.php >> index.shtml
+
+DirectoryIndex index.html index.cgi index.php index.shtml
