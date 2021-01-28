@@ -1,0 +1,9 @@
+Add this to apache configuration file (not in .htaccess !)
+
+    <Location />
+        SetOutputFilter DEFLATE
+        SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+        SetEnvIfNoCase Request_URI \.(?:mp3|wav|wma|au|m4p|snd|mid|wmv|mpg|mpeg|mp4|qt|mov)$ no-gzip dont-vary
+        SetEnvIfNoCase Request_URI \.pdf$ no-gzip dont-vary
+        SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|gz2|sit|rar)$ no-gzip dont-vary
+    </Location>
