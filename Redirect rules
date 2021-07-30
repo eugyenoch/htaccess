@@ -19,3 +19,10 @@ RewriteRule ^post\\.php$ http://www.example.com/blog/$1? [R=301,L]
 
 RewriteCond %{THE_REQUEST} ^.*/index.php
 RewriteRule ^(.*)index.php$ http://www.example.com/$1 [R=301,L]
+
+
+#redirect from http to https
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?domain\.com$ [NC]
+RewriteRule ^(.*)$ https://www.domain.com/$1 [L,R=301]
