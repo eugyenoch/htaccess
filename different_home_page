@@ -1,2 +1,5 @@
+#This will render a different file as home page, separate from your wordpress install or some other CMS's in-built homepage
+#include this file before your CMS begins it's own directive in the .htaccess file
+
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteRule ^(index\.php)?$ https://different_website/ [P]
