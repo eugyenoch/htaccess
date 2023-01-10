@@ -1,0 +1,4 @@
+# Rewrite a Site Address Without Changing the URL
+
+RewriteCond %{REQUEST_URI} ^/any_url/
+RewriteRule ^(.*)$ https://external_domain.com/any_url/ [P]
